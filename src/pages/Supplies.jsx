@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../styles/Components.css';
 import BarnCatsImage from '../components/BarnCatsImage';
-import { BACKEND_URL } from "../config"
+import  BACKEND_URL  from "../config"
 
 
 function Supplies() {
