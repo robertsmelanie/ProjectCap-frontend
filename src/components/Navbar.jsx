@@ -19,7 +19,7 @@ const Navbar = () => {
           <Link to="/about">About Us</Link>
           <Link to="/health">Health</Link>
           <Link to="/history">History</Link>
-          <Link to="/cart">Cart</Link>
+          {/* <Link to="/cart">Cart</Link> */}
         </div>
       </div>
       <div className="menu-links nav-links d-none d-md-flex">
@@ -28,7 +28,7 @@ const Navbar = () => {
         <Link to="/about">About Us</Link>
         <Link to="/health">Health</Link>
         <Link to="/history">History</Link>
-        <Link to="/cart">Cart</Link>
+        {/* <Link to="/cart">Cart</Link> */}
        
       </div>
       <div className="supplies-link">
