@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import BACKEND_URL from '../config';
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -23,7 +23,7 @@ const Contact = () => {
     setError(null);
 
     try {
-      const res = await fetch('http://localhost:3001/contact', {
+      const res = await fetch(BACKEND_URL+ '/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
