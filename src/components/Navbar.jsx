@@ -32,7 +32,7 @@ const Navbar = () => {
        
       </div>
       <div className="supplies-link">
-        <Link className="btn btn-primary custom-drama-btn" to='/supplies'>
+        <Link className="btn btn-primary text-white custom-drama-btn" to='/supplies'>
           Buy Supplies
         </Link>
         <button
