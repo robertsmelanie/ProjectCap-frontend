@@ -25,29 +25,29 @@ const BarnCatChat = () => {
         setLoading(true);
 
         // below it might be / instead of /chat
-        try {
-            const res = await fetch(BACKEND_URL + "/api/chat", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ message: userInput }),
-            });
+    //     try {
+    //         const res = await fetch(BACKEND_URL + "/api/chat", {
+    //             method: "POST",
+    //             headers: { "Content-Type": "application/json" },
+    //             body: JSON.stringify({ message: userInput }),
+    //         });
 
-            if (!res.ok) {
-                throw new Error(`Server responded with status: ${res.status}`);
-            }
+    //         if (!res.ok) {
+    //             throw new Error(`Server responded with status: ${res.status}`);
+    //         }
 
-            const data = await res.json();
-            setMessages([...newMessages, { sender: "cat", text: data.reply }]);
-        } catch (error) {
-            console.error("Chat error:", error);
-            setMessages([
-                ...newMessages,
-                { sender: "cat", text: `Something went wrong 😾 (${error.message || "Unknown error"})` }
-            ]);
-        } finally {
-            setLoading(false);
-        }
-    };
+    //         const data = await res.json();
+    //         setMessages([...newMessages, { sender: "cat", text: data.reply }]);
+    //     } catch (error) {
+    //         console.error("Chat error:", error);
+    //         setMessages([
+    //             ...newMessages,
+    //             { sender: "cat", text: `Something went wrong 😾 (${error.message || "Unknown error"})` }
+    //         ]);
+    //     } finally {
+    //         setLoading(false);
+    //     }
+    // };
 
     const handleKeyDown = (e) => {
         if (e.key === "Enter") {
