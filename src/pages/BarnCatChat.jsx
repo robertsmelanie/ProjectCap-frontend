@@ -2,6 +2,7 @@
 
 // export default BarnCatChat;
 import { useState, useEffect } from "react";
+import BACKEND_URL from "../config";
 // import "./BarnCatChat.css"; // Optional styles
 
 const BarnCatChat = () => {
@@ -23,8 +24,9 @@ const BarnCatChat = () => {
         setInput("");
         setLoading(true);
 
+        // below it might be / instead of /chat
         try {
-            const res = await fetch("http://localhost:3001/api/chat", {
+            const res = await fetch(BACKEND_URL + "/chat", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ message: userInput }),
