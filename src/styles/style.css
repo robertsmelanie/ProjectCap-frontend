@@ -589,3 +589,23 @@ button {
     border-radius: 6px;
     cursor: pointer;
 }
+
+.custom-drama-btn {
+    background-color: blue;
+    /* Bright Bootstrap blue */
+    
+    transition: background-color 1s ease, color 1s ease;
+}
+
+/* HoverK */
+.custom-drama-btn:hover {
+    background-color: maroon;
+    /* DeepPink */
+    color: yellow;
+}
+
+/* Active/Click K */
+.custom-drama-btn:active {
+    background-color: sandybrown;
+    color: red;
+}

@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../styles/Components.css';
 import BarnCatsImage from '../components/BarnCatsImage';
+import { BACKEND_URL } from "../config"
 
 
 function Supplies() {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3001/products')
+        axios.get(BACKEND_URL + "/products")
             .then((res) => setProducts(res.data))
             .catch((err) => console.error('Error fetching products:', err));
     }, []);
@@ -35,22 +36,22 @@ function Supplies() {
                                     <h3><em>Our Supplies</em></h3>
                                     <section className="container">
                                         <div className="row">
-                                            {products.map((product, index) => (
+                                            {products.map((products, index) => (
                                                 <div key={index} className="col-md-4 mb-4">
                                                     <div className="card h-100 shadow">
                                                        
                                                             <img
-                                                                src={product.Image}
+                                                                src={products.Image}
                                                                 className="card-img-top"
-                                                                alt={product.ItemTitle}
+                                                                alt={products.ItemTitle}
                                                                 style={{ height: '200px', objectFit: 'cover' }}
                                                             />
                                                         
                                                        
                                                         <div className="card-body">
-                                                            <h5 className="card-title">{product.ItemTitle}</h5>
-                                                            <p className="card-text">{product.Description}</p>
-                                                            <p className="card-text fw-bold">${product.Price}</p>
+                                                            <h5 className="card-title">{products.ItemTitle}</h5>
+                                                            <p className="card-text">{products.Description}</p>
+                                                            <p className="card-text fw-bold">${products.Price}</p>
                                                         </div>
                                                     </div>
                                                 </div>
