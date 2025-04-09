@@ -4,7 +4,8 @@ import Footer from '../components/Footer';
 import '../styles/Components.css';
 import BarnCatsImage from '../components/BarnCatsImage';
 import { useState } from "react";
-import BarnCatChat from "./BarnCatChat";
+// import BarnCatChat2 from "../components/oldBarnCatChat2.old";
+import BarnCatChat from './BarnCatChat';
 
 function Home() {
   const [showChat, setShowChat] = useState(false);
