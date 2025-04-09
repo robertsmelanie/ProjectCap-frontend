@@ -32,13 +32,9 @@ const Navbar = () => {
        
       </div>
       <div className="supplies-link">
-        <button
-          type="button"
-          className="btn btn-primary custom-drama-btn"
-          onClick={() => window.location.href = '/supplies'}
-        >
+        <Link className="btn btn-primary custom-drama-btn" to='/supplies'>
           Buy Supplies
-        </button>
+        </Link>
         <button
           className="btn btn-primary custom-drama-btn"
           onClick={() => window.location.href = '/calc'}

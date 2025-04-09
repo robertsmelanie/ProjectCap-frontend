@@ -9,7 +9,7 @@ function Supplies() {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        axios.get(BACKEND_URL + "/products")
+        axios.get(BACKEND_URL + "/supplies")
             .then((res) => setProducts(res.data))
             .catch((err) => console.error('Error fetching products:', err));
     }, []);
