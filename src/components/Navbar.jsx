@@ -35,12 +35,15 @@ const Navbar = () => {
         <Link className="btn btn-primary text-white custom-drama-btn" to='/supplies'>
           Buy Supplies
         </Link>
-        <button
+        <Link className="btn btn-primary text-white custom-drama-btn" to='/calc'>
+          How Old Is My Cat?
+        </Link>
+        {/* <button
           className="btn btn-primary custom-drama-btn"
           onClick={() => window.location.href = '/calc'}
         >
           How Old Is My Cat?
-        </button>
+        </button> */}
       </div>
     </div>
   );

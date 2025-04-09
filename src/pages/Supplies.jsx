@@ -22,8 +22,8 @@ function Supplies() {
 
 
                 <section>
-                    <h2>Welcome to Our Pet Store!</h2>
-                    <p>Your one-stop shop for all things pet-related.</p>
+                    {/* <h2>Welcome to Our Pet Store!</h2>
+                    <p>Your one-stop shop for all things pet-related.</p> */}
                     <div className="title">
                         <h1>
                             Supplies
