@@ -34,8 +34,9 @@ function Catcalc() {
                 <Calc />
                 
                             
-            </div>
-                <BarnCatsImage className="size-cat-image" />              
+                </div>
+                <BarnCatsImage />
+                {/* <BarnCatsImage className="size-cat-image" />               */}
         
       </div>
     </div></div>

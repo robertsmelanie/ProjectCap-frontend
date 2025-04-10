@@ -42,7 +42,7 @@ const History = () => {
                         {/* Maroon Background Section (One Column) */}
                         <div className="containertext p-4 mx-auto">
                                 <div className="scroll-box overflow-x-scroll containerleft">
-                                    <BarnCatsImage className="size-cat-image" />
+                                    {/* <BarnCatsImage className="size-cat-image" /> */}
                                 <div className="text-center">
                                     {/* <img className="img-fluid rounded shadow" src="illustration_for_barn_cats_9.png" alt="BarnCats" width="250px" /> */}
                                 </div>
@@ -57,7 +57,8 @@ const History = () => {
                                 <h3>Modern Barn Cats</h3>
                                 <p>Today, barn cats continue to serve as an eco-friendly pest control solution on farms and rural properties. Unlike house cats, they are often semi-feral or completely feral, living independently while forming colonies around barns, stables, and sheds. Although they primarily fend for themselves, many farmers provide basic care, such as supplemental feeding, shelter, and medical attention, to maintain a healthy barn cat population.</p>
                                 </div>
-                                <BarnCatsImage className="size-cat-image" />
+                                <BarnCatsImage />
+                                {/* <BarnCatsImage className="size-cat-image" /> */}
                         </div> {/* End Maroon Background */}
                     </div> {/* End Container */}
                 </div> {/* End Background Image Section */}
