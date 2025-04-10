@@ -609,3 +609,8 @@ button {
     background-color: sandybrown;
     color: red;
 }
+
+.size-cat-image {
+    width: 400px !important;
+    height: 400px !important;
+}
