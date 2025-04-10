@@ -42,7 +42,7 @@ const History = () => {
                         {/* Maroon Background Section (One Column) */}
                         <div className="containertext p-4 mx-auto">
                                 <div className="scroll-box overflow-x-scroll containerleft">
-                                    <BarnCatsImage />
+                                    <BarnCatsImage style={{width:600, height:600} } />
                                 <div className="text-center">
                                     {/* <img className="img-fluid rounded shadow" src="illustration_for_barn_cats_9.png" alt="BarnCats" width="250px" /> */}
                                 </div>

@@ -35,7 +35,7 @@ function Catcalc() {
                 
                             
             </div>
-                            <BarnCatsImage />              
+                <BarnCatsImage style={{ width: 500, height: 500 }} />              
         
       </div>
     </div></div>
